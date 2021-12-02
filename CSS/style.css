@@ -1,0 +1,325 @@
+
+
+:root{
+/********** COLORES PRIMARIOS ***********/
+    --RojoBrillante: rgb(242, 95, 58);
+    --AzulOscuro: rgb(35, 44, 81);
+    
+/*********** COLORES SECUNDARIOS*********/
+    --AzulGrisáceoOscuro: rgb(143, 148, 167);
+    --AzulMuyOscuro: rgb(29, 30, 37);
+    --RojoMmuyPálido: rgb(255, 239, 234);
+    --VarianteGrisClaro: rgb(249, 249, 249);
+}
+
+
+/********* APLICA A TODO EL BODY *********/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Be Vietnam Pro', sans-serif;    
+}
+.boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    box-shadow: 5px 8px 0px  rgb(255, 239, 234);
+    color: rgb(249, 249, 249);
+    background-color:  rgb(242, 95, 58);
+    border-radius: 25px;
+    border: none;
+    height: 40px;
+    width: 130px;  
+}
+h1{
+    color: rgb(35,44,81);
+    font-weight: bold;
+    font-size: 200%;
+    line-height: 40px;
+    text-align: center;
+    width: 100%; 
+    padding: 7%;
+    margin: auto;   
+}
+h2{
+    color: rgb(35,44,81);
+    font-weight: bold;
+    font-size: 170%;
+    line-height: 40px;
+    text-align: center;
+    width: 100%; 
+    padding: 5% 10% 5% 10%;
+}
+p{
+    color: rgb(143, 148, 167);
+    font-size: 14.4px;
+    line-height: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto; 
+    padding-bottom: 10%;  
+}
+
+
+/******************HEADER*****************/
+
+header div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10%;
+}
+header ul{
+    display: none;
+}
+header .boton{
+    display: none;
+}
+
+/*******************MAIN******************/
+/******* (SECTION UNO) *******/
+.UNO{
+    display: flex;
+    flex-direction: column; 
+    flex-wrap: wrap; 
+    margin-bottom: 15%;  
+}
+.UNO img{
+    display: flex;
+    width:  90%;
+    margin-left: 5%;
+}
+
+
+/******* (SECTION DOS) *******/
+
+.PuntoDos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.PuntoDos span{
+    color: rgb(249, 249, 249);
+    background-color: rgb(242, 95, 58);
+    padding: 8px;
+    border-radius: 20px;
+    width: 18%;
+    display: flex;
+    justify-content: center;   
+}
+.PuntoDos h5{
+    align-items: center;
+    background-color: rgb(255, 239, 234);
+    color: rgb(35,44,81);
+    display: flex;
+    gap: 5%;
+    justify-content: start;
+    margin-left: 5%;
+    width: 100%;
+}
+.PuntoDos p{
+    font-size: 13.6px;
+    text-align: left;
+    width: 90%; 
+}
+
+
+/***** (SECTION TRES) *****/
+.TRES article{
+    background-color: rgb(249, 249, 249) ;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15% 5% 10%;
+}
+.TRES img{
+    position: relative;
+    bottom: 30px;
+    margin-left: 35%;
+    width: 28%;
+}
+.TRES h4{
+    margin-left: 38%;
+}
+.TRES p{
+    width: 90%;
+}
+
+
+/***** (SECTION CUATRO) *****/
+.CUATRO{
+    background-color: rgb(242, 95, 58); 
+    margin-top: 10%;
+    padding: 20% 8%;
+}
+.CUATRO h1{
+    color: rgb(249, 249, 249);
+}
+.CUATRO .boton{
+    background-color: rgb(249, 249, 249);
+    box-shadow: none;
+    color: rgb(242, 95, 58);
+}
+
+
+ /*******************FOOTER******************/   
+footer{
+    background-color: rgb(29, 30, 37);
+    padding: 10% 5% 2%;
+    height: 440px;
+}
+.Form{
+    display: flex;
+    flex-wrap: wrap;
+}
+#email{   
+    border-radius: 20px;
+    padding-left: 5%;
+    height: 43px; 
+    width: 70%;
+}
+#Go{
+    background-color: rgb(242, 95, 58);
+    border-radius: 60px;
+    color: rgb(249, 249, 249);
+    margin-left: 2%;
+    width: 23%;
+    height: 43px;
+}
+footer nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+    margin: 10%;
+}
+footer ul a{
+    color: rgb(249, 249, 249);
+    font-size: 12px;
+    line-height: 34px;  
+}
+footer img{
+    height: 6.9%;
+    margin: 4.7%;  
+}
+footer .Logo{
+    text-align: center;
+}
+footer p{
+    font-size: 11px;
+}
+
+@media screen and (min-width: 376px) {
+ 
+    header #ico{
+        display: none;
+    }
+
+
+    /* MAIN */
+
+    
+    /* GENERAL */
+    h1{
+        font-size: 380%;
+        line-height: 130%;
+        text-align: left;
+        margin-left: 5%;  
+    }
+    h2{
+        font-size: 280%;
+        line-height:120% ;
+        text-align: left;   
+    } 
+    p{
+        font-size: 22px;
+        line-height: 150%;
+        text-align: left;
+    }
+  
+    /* SECTION UNO */
+    .UNO{
+        flex-direction: row-reverse;
+        justify-content:space-around;
+        padding-right: 5%;  
+    }
+    .UNO .PuntoUno{
+        width: 45%;
+    }
+    .UNO img{
+        width: 105%;
+        height: 105%;
+    }
+    UNO .boton{
+        width: 20%;
+        
+    }
+
+    /* SECTION DOS */
+
+    .DOS{
+        display: flex; 
+        justify-content: space-between;      
+    }
+    .DOS p{
+      font-size: 18px;
+      padding-right: 24%;
+      /* margin-left: 20%; */
+    }
+    .DOS .PuntoDos h5{
+        background-color: white;
+        font-size: 22px;
+    }
+    .DOS .PuntoDos span{
+        width: 12%;
+
+    }
+    .DOS .PuntoDos{
+        width: 50%;
+    }
+    .DOS .PuntoTres{
+        width: 50%;
+    }
+    .DOS .H{
+        position: absolute;
+        text-align: center;
+        margin-top: 50%;
+    }
+
+
+
+    /* SECTION TRES */
+
+    
+    .TRES article{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        margin: 0;
+        width: 30%;
+
+    }
+    /* SECTION CUATRO */
+
+    .CUATRO{
+        padding: 1% 15% 1% 2%;
+        display: flex;
+    }
+    .CUATRO h1{
+        font-size: 50px;
+    }
+    
+}
+   
+
+
+
+
+
+
+
